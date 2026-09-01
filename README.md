@@ -275,6 +275,6 @@ This project is available for personal and educational use unless otherwise spec
 
 ## Author
 
-**theycreate88**
+**theycreate88- Abdul Basit**
 
 Built with **Next.js, React, and Tailwind CSS**.
