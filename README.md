@@ -8,11 +8,6 @@ Estatix Prime reflects the effort poured into every detail — from the layout s
 
 **Live Website:** https://estatixprime.vercel.app
 
-Example:
-
-```text
-https://estatix-prime.vercel.app
-```
 
 ## Overview
 
