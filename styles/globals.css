@@ -1,0 +1,52 @@
+ @import "tailwindcss";
+
+ html {
+  scroll-behavior: smooth;
+ 
+}
+
+nav{
+    font-family: oswald;
+}
+
+h2{
+    font-family: oswald;
+ 
+}
+
+.btn-action{
+
+        font-family: oswald;
+}
+
+ @layer components {
+  .btn-action {
+    @apply  relative inline-block h-[45px] w-[160px] text-[12px] font-bold tracking-[2px] 
+           text-black text-center leading-[45px] overflow-hidden z-[1] bg-white 
+           transition-colors duration-300;
+  }
+
+  .btn-action::before {
+    content: "";
+    @apply absolute top-0 left-0 h-full w-full bg-gray-600 -translate-x-full 
+           transition-transform duration-300 z-[-1];
+  }
+
+  .btn-action::after {
+    content: "";
+    @apply absolute top-0 left-0 h-full w-full bg-white translate-x-0 
+           transition-transform duration-300 z-[-2];
+  }
+
+  .btn-action:hover {
+    @apply text-white;
+  }
+
+  .btn-action:hover::before {
+    @apply translate-x-0;
+  }
+
+  .btn-action:hover::after {
+    @apply translate-x-full;
+  }
+}
